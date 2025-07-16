@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package storage;
+
+option go_package = "braendie.storage.v1;ssov1";
+
+import "google/protobuf/empty.proto";
+
+service Storage {
+  rpc Create (CreateRequest) returns (CreateResponse);
+  rpc List (google.protobuf.Empty) returns (ListResponse);
+  rpc Delete (DeleteRequest) returns (google.protobuf.Empty);
+  rpc Done (DoneRequest) returns (google.protobuf.Empty);
+}
+
+message CreateRequest {
+  string title = 1;
+  string description = 2;
+}
+
+message CreateResponse {
+  int64 task_id = 1;
+}
+
+message ListResponse {
+  repeated Task tasks = 1;
+}
+
+message DeleteRequest {
+  int64 task_id = 1;
+}
+
+message DoneRequest {
+  int64 task_id = 1;
+}
+
+message Task {
+  int64 task_id = 1;
+  string title = 2;
+  string description = 3;
+  bool done = 4;
+}
