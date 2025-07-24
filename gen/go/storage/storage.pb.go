@@ -4,7 +4,7 @@
 // 	protoc        v4.25.8
 // source: storage/storage.proto
 
-package ssov1
+package storagev1
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -343,7 +343,7 @@ const file_storage_storage_proto_rawDesc = "" +
 	"\x06Create\x12\x16.storage.CreateRequest\x1a\x17.storage.CreateResponse\x125\n" +
 	"\x04List\x12\x16.google.protobuf.Empty\x1a\x15.storage.ListResponse\x128\n" +
 	"\x06Delete\x12\x16.storage.DeleteRequest\x1a\x16.google.protobuf.Empty\x124\n" +
-	"\x04Done\x12\x14.storage.DoneRequest\x1a\x16.google.protobuf.EmptyB\x1bZ\x19braendie.storage.v1;ssov1b\x06proto3"
+	"\x04Done\x12\x14.storage.DoneRequest\x1a\x16.google.protobuf.EmptyB\x1fZ\x1dbraendie.storage.v1;storagev1b\x06proto3"
 
 var (
 	file_storage_storage_proto_rawDescOnce sync.Once

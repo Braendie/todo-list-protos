@@ -4,7 +4,7 @@
 // - protoc             v4.25.8
 // source: storage/storage.proto
 
-package ssov1
+package storagev1
 
 import (
 	context "context"

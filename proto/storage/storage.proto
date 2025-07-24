@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package storage;
 
-option go_package = "braendie.storage.v1;ssov1";
+option go_package = "braendie.storage.v1;storagev1";
 
 import "google/protobuf/empty.proto";
 
